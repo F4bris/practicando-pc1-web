@@ -1,0 +1,28 @@
+<script setup>
+import {useI18n} from "vue-i18n";
+const {t} = useI18n();
+</script>
+
+<template>
+<div class="grid bg-primary mt-4 align-content-start">
+  <div class="col-12 mt-3 align-content-center justify-content-center">
+    <p>Copyright
+      © 2025 The White House Association, inc All rights reserved.</p>
+  </div>
+  <div class="col-12 ml-3 mt-3 align-items-center justify-content-center">
+    <p>
+      {{t('authoring-phrase.intro')}} <i class="pi pi-heart"/>
+      {{t('authoring-phrase.use')}} <a href="https://primevue.org/" target="_blank">PrimeVue</a>
+      {{t('authoring-phrase.author', {brand: 'ACME'})}}
+    </p>
+    <p>
+      {{t('footer.powered-by')}} <a href="https://www.newsapi.org">NewsApi</a>
+      {{t('footer.and')}} <a href="https://www.logo.dev" target="_blank">Logo.dev Logo API</a>
+    </p>
+  </div>
+</div>
+</template>
+
+<style scoped>
+
+</style>
